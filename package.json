@@ -1,0 +1,30 @@
+{
+    "name": "calofi",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "start": "bun run src/index.ts",
+        "dev": "bun --watch src/index.ts",
+        "lint": "eslint . --fix",
+        "format": "prettier --write .",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@typescript-eslint/eslint-plugin": "^8.32.0",
+        "@typescript-eslint/parser": "^8.32.0",
+        "eslint": "^9.26.0",
+        "eslint-config-prettier": "^10.1.5",
+        "eslint-plugin-prettier": "^5.4.0",
+        "husky": "^9.1.7",
+        "prettier": "^3.5.3"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "discord.js": "^14.19.3",
+        "dotenv": "^16.5.0"
+    }
+}
